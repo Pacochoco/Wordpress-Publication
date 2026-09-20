@@ -1,4 +1,4 @@
-# SEO Content Pipeline — F31 Blog
+# SEO Content Pipeline
 
 Pipeline en deux étapes pour générer des articles SEO pédagogiques sur Excel/Power BI et les publier automatiquement sur le blog WordPress de F31.
 
@@ -111,6 +111,3 @@ Vérifier `DRY_RUN = True` pour un premier test sans publication réelle.
 - Aucune gestion de nouvelle tentative (retry) en cas d'échec d'appel API (génération ou publication)
 - Le prompt de génération d'article contient un exemple de style unique — pourrait être externalisé dans un fichier séparé pour faciliter les mises à jour éditoriales
 
-## Sécurité
-
-Les identifiants (clé API OpenAI, mot de passe d'application WordPress) doivent être stockés dans un fichier `.env` non commité (voir `.gitignore`), jamais écrits en clair dans le code source.
